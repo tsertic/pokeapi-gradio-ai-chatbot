@@ -2,7 +2,8 @@
 
 [![Python Version](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](YOUR_GRADIO_SPACE_URL_HERE) <!-- Replace with your actual Gradio Space URL if deployed -->
+
+<!-- [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](YOUR_GRADIO_SPACE_URL_HERE)  --><!-- Replace with your actual Gradio Space URL if deployed -->
 
 PokéPal AI is an interactive chatbot that leverages the power of Large Language Models (LLMs) and external APIs to provide detailed information about Pokémon, including visualizing their stats! Ask about a single Pokémon or compare multiple ones.
 
@@ -11,7 +12,7 @@ PokéPal AI is an interactive chatbot that leverages the power of Large Language
 ![PokéPal AI Demo](./preview.gif)
 _(This GIF shows an example interaction with the chatbot, comparing Pokémon stats)_
 
-**Try it live:** [PokéPal AI on Gradio Spaces](YOUR_GRADIO_SPACE_URL_HERE) <!-- Replace with your actual Gradio Space URL if deployed -->
+<!-- **Try it live:** [PokéPal AI on Gradio Spaces](YOUR_GRADIO_SPACE_URL_HERE) <!-- Replace with your actual Gradio Space URL if deployed --> -->
 
 ## About The Project
 
@@ -36,7 +37,7 @@ The user interface is powered by Gradio, offering a simple and accessible web in
 
 - Python 3.8+
 - OpenAI API (`openai` library)
-- PokeAPI (`requests` library)
+- **PokeAPI** ([pokeapi.co](https://pokeapi.co/)) accessed via `requests` library
 - Matplotlib (for chart generation)
 - NumPy (dependency for Matplotlib)
 - Gradio (for the web UI)
@@ -47,7 +48,7 @@ The user interface is powered by Gradio, offering a simple and accessible web in
 1.  **Prerequisites:** Ensure you have Python 3.8 or newer installed.
 2.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/pokeapi-gradio-chatbot.git # Replace YOUR_USERNAME and repo name if different
+    git clone https://github.com/tsertic/pokeapi-gradio-ai-chatbot # Replace YOUR_USERNAME and repo name if different
     cd pokeapi-gradio-chatbot
     ```
 3.  **Create and Activate a Virtual Environment (Recommended):**
@@ -98,5 +99,12 @@ The user interface is powered by Gradio, offering a simple and accessible web in
 10. The LLM, now having the context of the query and the fetched data, generates a final textual response comparing the Pokémon.
 11. The `chat` function appends the Base64 image (as Markdown) to the LLM's text response if a graph was generated.
 12. The combined response (text + embedded image) is displayed to the user in the Gradio interface.
+
+## Acknowledgements
+
+- This project relies on the amazing and free **PokeAPI** ([pokeapi.co](https://pokeapi.co/)). Thank you to its creators and maintainers for providing such a comprehensive and accessible resource for Pokémon data!
+- OpenAI for providing the powerful language models and function calling capabilities.
+- Gradio for the easy-to-use interface library.
+- Matplotlib for the plotting functionalities.
 
 **Developed by [Tomislav Sertić](https://tsertic.dev)**
